@@ -1,0 +1,12 @@
+# secrets
+config.json
+
+# editor configs
+.vscode
+
+# python and pipenv files
+__pycache__
+Pipfile
+Pipfile.lock
+venv/*
+

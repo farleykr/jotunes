@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    {% for key, value in playlist.items()  %}
+
+    <div class="card text-center my-4 shadow">
+        <div class="card-header">
+            <h5>{{ key }}, by {{ value[0] }}</h5>
+        </div>
+        <img class="rounded mx-auto mt-2 img-thumbnail" src="{{ value[3] }}" alt="album artwork"/>
+        <div class="card-body">
+            <a href="{{ value[1] }}" class="btn btn-primary">GO TO SONG</a>
+            
+            <a href="{{ value[2] }}" class="btn btn-primary">GO TO ARTIST</a>
+            
+            
+        </div>
+    </div>
+    
+    {% endfor %}
+
+{% endblock content %}
